@@ -13,9 +13,11 @@
   **1. Cloud Shell**
 
   - Click on the icon to activate the cloud shell
+    <p></p>
     <p align="left" width="100%">
       <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/02_cloud_shell.png" alt="02_cloud_shell" width="80%"/>
     </p>
+    <p></p>
   - If the project is not configured yet on your shell, run this command.
     > gcloud config set project [PROJECT_ID]
   - Replace **[PROJECT_ID]** with your own project id.
@@ -28,20 +30,28 @@
 **2. Get the Material Ready For Cloud Shell**
 
 - Click on the **3-dot** icon above the cloud shell panel and choose **"Upload"**.
+  <p></p>
   <p align="left" width="100%">
     <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/03_upload_folder.png" alt="03_upload_folder" width="80%"/>
   </p>
+  <p></p>
 - Choose **"folder"**, click **"Choose Folder"** button and upload **"01_Google_ML_API"** folder to the cloud shell.
+  <p></p>
   <p align="left" width="100%">
     <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/04_upload_panel.png" alt="04_upload_panel" width="20%"/>
   </p>
+  <p></p>
 - Run this command on the shell to verify the process.
 
   > ls
 
+  ***
+
+  <p></p>
   <p align="left" width="100%">
     <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/05_command_line_ls.png" alt="05_command_line_ls" width="40%"/>
   </p>
+  <p></p>
 
 ## Google Vision API - [Documentation](https://cloud.google.com/vision/docs/features-list)
 
@@ -78,9 +88,13 @@ When using image data, there are some features that these APIs are capable to do
 
   > nano curl.sh
 
+  ***
+
+  <p></p>
   <p align="left" width="100%">
     <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/06_open_curl_sh.png" alt="06_open_curl_sh" width="40%"/>
   </p>
+  <p></p>
 
 - Copy the content of the curl.sh file and press **ctrl+X** to close the nano application.
 - Change the **"mlops-training-class"** with your own project id.
@@ -95,12 +109,14 @@ When using image data, there are some features that these APIs are capable to do
     <p align="left" width="100%">
       <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/07_result_api.png" alt="07_result_api" width="30%"/>
     </p>
+  <p></p>
 
 - To change the image, number of labels, or the type of detection, you can modify it on request.json
   <p></p>
   <p align="left" width="100%">
     <img src="../05_Source/02_GoogleMLAPI/GoolgleAIVision/08_json_request.png" alt="08_json_request" width="70%"/>
   </p>
+  <p></p>
 - For the image, it can be from internet, local machine(Need to be upload on your cloud shell) or from the cloud storage's bucket itself.
 - For the type of detection, please refer to the [documentation](https://cloud.google.com/vision/docs/features-list) for what parameter to be used for each type of detection.
   <p></p>
